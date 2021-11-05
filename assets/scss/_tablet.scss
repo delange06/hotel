@@ -1,0 +1,44 @@
+
+@media screen and (min-width: 480px) and (max-width: 779px) {
+    h1 {
+        font-size: 7vh;
+    }
+
+    .mobile-menu {
+        display: none;
+      }
+      .mobile {
+        display: none;
+      }
+    
+
+  .formation__container {
+      
+        display: flex;
+        flex-wrap: wrap;
+        article {
+            width:45%;
+            
+        }
+    }
+
+}
+
+
+
+
+
+    @media screen and (max-width: 480px) {
+    
+        .desktop {
+            display: none;
+        }
+        .mobile-menu {
+          display: show;
+        }
+    }
+
+
+  
+
+

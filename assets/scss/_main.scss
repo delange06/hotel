@@ -1,0 +1,123 @@
+html {
+    font-family: 'Roboto';
+}
+
+figure {
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    img {
+        filter: grayscale(100);
+    }
+}
+
+
+a {
+    color: $primary_color;
+    &:hover {color: $secondary_color;}
+    &:active {color: $primary_color;}
+
+}
+
+ul {
+    list-style: none;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    ul {
+     display: flex;
+     justify-content: space-around;
+     gap: 1em;
+     li {
+         flex: 1 0 auto; // le texte dans le li ne passe pas à la ligne
+         background: $primary_color;
+         padding: 5px;
+         font-family: Roboto;
+         &:hover {
+            background-color: $white;
+            color: $primary_color;
+            a {
+                color: $primary_color;
+            }
+        }
+         a {
+            color: $white;
+            text-decoration: none;
+         }
+     }
+}
+}
+
+
+h1 {
+    font-family: open-sans;
+    color: $primary_color;
+    text-align: center;
+}
+
+h2 {
+    color: $tersary_color;
+}
+
+/**  Section à propos   **/
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+h1 {
+    font-size: 4vh;
+}
+
+
+.description {
+    li {
+        &:nth-child(1) {
+            font-size: 1.5em;
+        }
+        &:nth-child(2) {
+            position: relative;
+            &::before{
+                font-size: 1.2em;
+                position: absolute;
+                top: 0px;
+                left: -20px;
+                font-family: "Material Icons";
+                content: "\e0be";
+            }
+        }
+    }
+}
+
+ 
+footer {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .footer__social {
+        display: flex;
+        justify-content: space-around;
+        gap: 3em;
+
+        .footer__social-item {
+            font-size: 40px;
+            color: rgba( #6262ec, $alpha: 0.7);
+            cursor: pointer;
+            transition-duration: 0.7s;
+            &:hover{
+                color: #6262ec;
+            }
+        }
+    }
+}
