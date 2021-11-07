@@ -1,25 +1,75 @@
 html {
     font-family: 'Roboto';
 }
+ 
 
 figure {
     margin: 0;
 }
 
 header {
-    text-align: center;
-    img {
-        filter: grayscale(100);
-    }
+    // img {
+    //     filter: grayscale(100);
+    // }
+}
+
+// ************************* VIDEO **********************************   //
+
+video {
+  top: 0;
+  object-fit: fill; // to not respect video ratio
+  height: 400px;    // of the container parent
+  width: 100vw;
+  display: block;
+  //position: inherit;
+  width: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+//*************  NAVBAR MENU ***********************//
+
+.menu-container {
+  height: 100px;
+  width: 100%;
+  padding: 0 10;
+  background-color: black;
+  opacity: 0.7;
+  position: fixed;
 }
 
 
-a {
-    color: $primary_color;
-    &:hover {color: $secondary_color;}
-    &:active {color: $primary_color;}
 
+.sous-menu {
+  display: none;
+  background-color: black;
+  margin: 0;
+  padding: 0;
 }
+
+.sous-menu li {
+  width: 100%;
+  text-align: left;
+}
+
+.menu-container {
+  align-items: center;
+  
+  display: flex;
+  justify-content: space-between;
+  // .book {
+  //   float: right;
+  // }
+}
+
+
+
+//a {
+    // color: $primary_color;
+    // &:hover {color: $secondary_color;}
+    // &:active {color: $primary_color;}
+
+//}
 
 ul {
     list-style: none;
@@ -28,32 +78,45 @@ ul {
 nav {
     display: flex;
     justify-content: center;
-    margin: 0;
+    display: inline-block;
+    margin-left: 550px;
     padding: 0;
     ul {
-     display: flex;
-     justify-content: space-around;
-     gap: 1em;
-     li {
+      display: flex;
+      gap: 1em;
+      li {
          flex: 1 0 auto; // le texte dans le li ne passe pas à la ligne
-         background: $primary_color;
-         padding: 5px;
          font-family: Roboto;
-         &:hover {
-            background-color: $white;
-            color: $primary_color;
-            a {
-                color: $primary_color;
-            }
-        }
-         a {
-            color: $white;
-            text-decoration: none;
+         &:hover .sous-menu {
+           display: block;
          }
-     }
-}
-}
+         &:hover {
+            a {
+                color: $white;
+                font-size:1.08em;
+            }
+         }
 
+        a {
+            color: $whiteee;
+            text-decoration: none;
+            transition: 0.3s;
+         }
+
+        ul li {
+        &:hover {
+          a  {
+            color: $white;
+            font-size:1.5em;
+          }
+        }
+          
+        }
+            
+      }
+    }
+}
+//**********************  END NAVBAR MENU  ***********************  //
 
 h1 {
     font-family: open-sans;
@@ -67,38 +130,20 @@ h2 {
 
 /**  Section à propos   **/
 
-.container {
-    display: flex;
-    justify-content: space-around;
-}
-
-
-
 h1 {
     font-size: 4vh;
 }
 
 
-.description {
-    li {
-        &:nth-child(1) {
-            font-size: 1.5em;
-        }
-        &:nth-child(2) {
-            position: relative;
-            &::before{
-                font-size: 1.2em;
-                position: absolute;
-                top: 0px;
-                left: -20px;
-                font-family: "Material Icons";
-                content: "\e0be";
-            }
-        }
-    }
-}
 
+// *************     MAP **************************
+#map {
+  width: 50vw;
+  z-index: -1;
+}
  
+
+//*********************** SECTION FOOTER ********************************* //
 footer {
     height: 150px;
     display: flex;
@@ -120,4 +165,24 @@ footer {
             }
         }
     }
+}
+
+// **************       BUTTON        ***********************//
+input {
+  background-color: rgb(246, 238, 238);
+  margin-right: 50px;
+  display: inline-block;
+  height: 40px;
+  width: 70px;
+}
+
+
+.raise:hover,
+.raise:focus {
+  --box-shadow-color: rgb(255, 255, 255);
+  box-shadow: 0 0.5em 0.5em -0.4em  var(  --box-shadow-color);
+  transition: 0.3;
+  transform: translateY(-0.35em);
+  background-color: black;
+  color: white;
 }
