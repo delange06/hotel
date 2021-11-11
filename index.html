@@ -21,9 +21,9 @@
     <div class="menu-container">
       <nav>
         <ul>
-            <li class="deroulant">
+            <li>
               <a href="#">THE HOTEL</a>
-              <ul class="sous-menu">
+              <ul>
                 <li><a href="#">About us</a></li>
                 <li><a href="#">Our staff</a></li>
                 <li><a href="#">Parteners</a></li>
@@ -37,26 +37,46 @@
             <li><a href="#">CONTACT</a></li>
         </ul>
       </nav>
-        <input type="button" value="BOOK" class="raise" >
+        <input type="button" value="BOOK">
     </div>
       
   </header>
   <main>
     <section>
-      
         <video   poster="/assets/video/BUD_PLP_Ambient.mp4" autoplay="true" loop>
           <source src="/assets/video/BUD_PLP_Ambient.mp4"
                   type="video/mp4">
       
           Sorry, your browser doesn't support embedded videos.
         </video>
-      
-     
     </section>
     
     <section>
-      <h2>YOUR MOST MEMORABLE MOMENTS.</h2>
-        <figure><img src="assets/img/anantara_ne_york_palace_budapest_1550X.webp" 
+        <h2>ANANTARA NEW YORK PALACE BUDAPEST HOTEL</h2>
+        <p>LE GLAMOUR DE L'AGE D'OR</p>
+          <figure><img src="assets/img/anantara_ne_york_palace_budapest_1550X.webp" 
+            alt="anantara palace budapest"
+            sizes="(min-width: 400) 775px, (min-width: 960) 1550px, (min-width: 1600) 2100px, 100vw">
+          </figure>
+    </section>
+    <section>
+        <h2>CHAMBRES</h2>
+        <p>CHOISIR SON PARFAIT SANCTUAIRE</p>
+        <div class="slider-container">
+          <div class="menu">
+            <label for="slide-dot-1"></label>
+            <label for="slide-dot-2"></label>
+          </div>
+          <input id="slide-dot-1" type="radio" name="slides" >
+          <div class="slide slide-1"></div>
+          <input id="slide-dot-2" type="radio" name="slides" checked>
+          <div class="slide slide-2"></div>
+        </div>
+      </section>
+      <section> 
+        <h2>ANANTARA expériences</h2>
+        <p>Vos moments les plus mémorables</p>
+        <figure><img src="assets/img/anantara_ne_york_palace_budapest_agard_944x510_3.webp" 
           alt="anantara palace budapest"
           sizes="(min-width: 400) 775px, (min-width: 960) 1550px, (min-width: 1600) 2100px, 100vw">
         </figure>
@@ -79,10 +99,10 @@
       </div>
       <article>
         <h3>Anantara New York Palace Budapest Hotel</h3>
-        <p>
+        <span>
           <i class="fas fa-map-marker-alt"></i>
           Erzsébet krt. 9 1073 Budapest
-        </p>
+        </span>
         <span><a href="http://maps.google.com/?q=47.4984232,19.0705289">Open Google Map</a></span>
       </article>
     </section>
