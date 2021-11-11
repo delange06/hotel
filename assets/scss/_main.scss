@@ -215,7 +215,7 @@ footer {
         justify-content: space-around;
         gap: 3em;
 
-        .footer__social-item {
+        .footer__social-item i{
             font-size: 40px;
             color: rgba( #ffffff, $alpha: 0.7);
             cursor: pointer;

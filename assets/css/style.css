@@ -165,12 +165,12 @@ footer {
     display: flex;
     justify-content: space-around;
     gap: 3em; }
-    footer .footer__social .footer__social-item {
+    footer .footer__social .footer__social-item i {
       font-size: 40px;
       color: rgba(255, 255, 255, 0.7);
       cursor: pointer;
       transition-duration: 0.7s; }
-      footer .footer__social .footer__social-item:hover {
+      footer .footer__social .footer__social-item i:hover {
         color: #6262ec; }
 
 input {
