@@ -37,18 +37,18 @@ h1 {
   padding: 0; }
 
 h2 {
-  font-size: 4vh;
+  font-size: 1vw;
   margin: 0;
-  padding: 0; }
+  padding: 30px; }
 
 p {
   color: #D49437;
-  font-size: 54px;
+  font-size: 2vw;
   line-height: 0;
   height: 0;
   text-align: center;
-  margin: 0;
-  padding: 0; }
+  margin: 5;
+  padding: 20px; }
 
 ul, li {
   margin: 0;
@@ -63,14 +63,17 @@ video {
 
 .menu-container {
   display: flex;
-  position: relative;
+  position: fixed;
+  top: 0;
   align-items: center;
   justify-content: space-between;
   height: 100px;
   width: 100%;
   background-color: black;
-  opacity: 0.6;
-  padding: 0 10; }
+  opacity: 0.6; }
+
+.hotel-name {
+  margin-left: 80px; }
 
 ul {
   list-style: none; }
@@ -96,7 +99,7 @@ nav ul {
       text-align: left; }
     nav ul li:hover ul {
       position: absolute;
-      left: -10px; }
+      left: 0px; }
       nav ul li:hover ul:hover a {
         color: white;
         font-size: 1.2em; }
