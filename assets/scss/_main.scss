@@ -31,13 +31,15 @@ h1 {
   padding: 0;
 }
 
-h2 {
+p {
+  text-align: center;
   font-size: 1vw;
   margin: 0;
   padding: 30px;
+  color: #fff;
 }
 
-p {
+h2 {
 color: $tersary_color;
 font-size: 2vw;
 line-height: 0;
@@ -47,6 +49,22 @@ margin: 5;
 padding: 20px;
 }
 
+h3 {
+  color: #ffffff;
+  line-height: 50px;
+  margin: 0 10vw;
+
+  span {
+    font-size: 18px;
+    text-align: justify;
+  }
+}
+.titre {
+  text-align: center;
+  font-size: 35px;
+}
+
+ 
 ul, li {
   margin: 0;
   padding: 0;
@@ -93,10 +111,10 @@ ul {
 }
 
 nav {
+    transform: translateX(-13em);
     ul {
       display: flex;
       gap: 1em;
-    
      
       li {
         position: relative;
@@ -142,7 +160,14 @@ nav {
 
 
 
-// *************                CHAMBRE            **************************  //
+//*****************   SECTION 1   **************************//
+.presentation {
+  margin: 0 100px;
+  text-align: justify;
+  margin-bottom: 100px;
+}
+
+// *************     SECTION 2           CHAMBRE            **************************  //
 
 
 
