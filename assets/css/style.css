@@ -87,13 +87,15 @@ video {
   opacity: 0.6; }
 
 .hotel-name {
-  margin-left: 80px; }
+  margin-left: 80px;
+  font-size: 2vw; }
 
 ul {
   list-style: none; }
 
 nav {
-  transform: translateX(-13em); }
+  transform: translateX(-3em);
+  font-size: 0.7vw; }
   nav ul {
     display: flex;
     gap: 1em; }
@@ -185,6 +187,18 @@ input {
     .formation__container article {
       width: 45%; } }
 @media screen and (max-width: 480px) {
+  .desktop {
+    display: none; }
+
+  .mobile-menu {
+    display: show; } }
+@media screen and (min-width: 580px) {
+  .mobile-menu {
+    display: none; }
+
+  .desktop {
+    display: show; } }
+@media screen and (max-width: 580px) {
   .desktop {
     display: none; }
 

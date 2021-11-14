@@ -1,6 +1,24 @@
+@media screen and (min-width: 580px) {
+  // h1 {
+  //     font-size: 10vh;
+  // }
+  .mobile-menu {
+    display: none;
+  }
 
-  
-@media screen and (min-width: 779px) {
-   
-   
+  .desktop {
+      display: show;
+
+  }
+}
+
+
+@media screen and (max-width: 580px) {
+
+    .desktop {
+        display: none;
+    }
+    .mobile-menu {
+      display: show;
+    }
 }

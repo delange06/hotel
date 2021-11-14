@@ -97,6 +97,7 @@ video {
 }
 .hotel-name {
   margin-left: 80px;
+  font-size: 2vw;
 }
 
 //a {
@@ -111,7 +112,8 @@ ul {
 }
 
 nav {
-    transform: translateX(-13em);
+    transform: translateX(-3em);
+    font-size: 0.7vw;
     ul {
       display: flex;
       gap: 1em;
