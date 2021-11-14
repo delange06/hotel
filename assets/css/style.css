@@ -75,6 +75,10 @@ video {
   width: 100%;
   z-index: -1; }
 
+label, #toggle {
+  color: #fff;
+  display: none; }
+
 .menu-container {
   display: flex;
   position: fixed;
@@ -192,17 +196,29 @@ input {
 
   .mobile-menu {
     display: show; } }
-@media screen and (min-width: 580px) {
-  .mobile-menu {
-    display: none; }
-
-  .desktop {
-    display: show; } }
 @media screen and (max-width: 580px) {
-  .desktop {
-    display: none; }
+  nav .menu {
+    display: none;
+    flex-direction: column;
+    height: 220px; }
 
-  .mobile-menu {
-    display: show; } }
+  #toggle:checked + .menu {
+    display: flex; }
+
+  .hotel-name {
+    transform: translateX(-900px); }
+
+  .book {
+    justify-content: end; }
+
+  label {
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 40px;
+    color: white;
+    cursor: pointer; } }
 
 /*# sourceMappingURL=style.css.map */

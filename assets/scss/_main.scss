@@ -83,7 +83,12 @@ video {
 
 //*************  NAVBAR MENU ***********************//
 
- 
+label, #toggle {
+  color: #fff;
+  display: none;
+}
+
+
 .menu-container {
   display: flex;
   position: fixed;
@@ -110,6 +115,7 @@ video {
 ul {
     list-style: none;
 }
+
 
 nav {
     transform: translateX(-3em);
