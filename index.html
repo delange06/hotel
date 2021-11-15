@@ -23,9 +23,9 @@
 <body>
   <header>
     <div class="menu-container">
-      <div>
-        <h2 class="hotel-name">Parimis Hôtel <span>*****</span></h2>
-      </div>
+      
+      <h2 class="hotel-name">Parimis Hôtel <span>*****</span></h2>
+      
       <nav>
         <label for="toggle">☰</label>
         <input type="checkbox" id="toggle">
@@ -137,6 +137,35 @@
         </span> -->
         <span><a href="http://maps.google.com/?q=47.4984232,19.0705289">Open Google Map</a></span>
       </article>
+    </section>
+    
+    <section>
+      <h2>Formulaire de contact </h2>
+      <form id="form-contact" action="#">
+        <p class="text-form"><i>Complétez le formulaire. Les champs marqués par </i>* sont obligatoires</p>
+        <fieldset>
+          <legend>Contact</legend>
+          <label for="nom">Nom *</label>
+          <input id="nom" placeholder="Votre nom" required><br>
+          <label for="prenom">Prénom *</label>
+          <input id="nom" placeholder="Votre prénom" required><br>
+          <label for="adresse">Adresse *</label>
+          <input id="adresse" placeholder="Votre adresse" required><br>
+          <label for="telephone">Telephone</label>
+          <input id="telephone" type="tel" placeholder="0123456789" required><br>
+          <label for="email">Email *</label>
+          <input id="email" type="email" placeholder="Votre e-mail" required><br>
+          <label for="sexe">Sexe</label>
+          <select id="sexe">
+            <option value="F" name="sexe">Femme</option>
+            <option value="H" name="sexe">Homme</option>
+          </select><br>
+          <label for="comment">Message *</label>
+          <textarea id="comment"></textarea>
+        </fieldset>
+
+        <p><input type="submit" value="Envoyer"></p>
+      </form>
     </section>
 </main>
 <!--             FOOTER           -->
