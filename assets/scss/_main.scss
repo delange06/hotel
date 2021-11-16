@@ -83,7 +83,7 @@ video {
 
 //*************  NAVBAR MENU ***********************//
 
-label, #toggle {
+label, #menu-btn {
   color: #fff;
   display: none;
 }
@@ -246,6 +246,61 @@ input[type=submit] {
   color: #fff;
   }
 }
+
+
+//*********************** SECTION CONTACT ********************************* //
+
+fieldset {
+  margin-bottom: 15px;
+  padding: 10px;
+}
+ 
+legend {
+  padding: 0px 3px;
+  font-weight: bold;
+  font-size: 30px;
+}
+ 
+label {
+  width: 100px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 6px;
+}
+ 
+ 
+input:focus {
+  background: #eaeaea;
+}
+ 
+input, textarea {
+  width: 500px;
+}
+ 
+textarea {
+  height: 200px;
+}
+ 
+select {
+  width: 100px;
+}
+ 
+input[type=submit] {
+  width: 150px;
+  padding: 10px;
+  border-radius: 30px;
+  font-size: 15px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.text-form {
+  font-size: 15px;
+}
+
+#form-contact {
+  color: white;
+}
  
 
 //*********************** SECTION FOOTER ********************************* //
@@ -274,12 +329,12 @@ footer {
 }
 
 // **************       BUTTON        ***********************//
-input {
+.book {
   background-color: rgb(246, 238, 238);
   margin-right: 50px;
+  width: 70px;
   display: inline-block;
   height: 40px;
-  width: 70px;
 }
 
 

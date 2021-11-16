@@ -9,7 +9,8 @@
  
 
   .hotel-name {
-    transform: translateX(-900px);
+    //transform: translateX(-900px);
+    overflow: hidden;
   }
 
   .book {
