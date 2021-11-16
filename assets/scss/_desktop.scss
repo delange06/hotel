@@ -1,20 +1,48 @@
-@media screen and (max-width: 580px) {
+.menu-checkbox {
+  opacity: 0;
+  position: absolute;
+  top: -1000px;
+}
 
-  nav .menu {
-    display: none;
-    flex-direction: column;
-    height: 220px;
-  }
 
- 
+@media screen and (max-width: 780px) {
 
   .hotel-name {
-    //transform: translateX(-900px);
+    transform: translateX(-900px);
     overflow: hidden;
   }
 
-  .book {
-    justify-content: end;
+  .menu-toggle {
+    display: block;
+    padding: .1em 0.1em;
+  }
+
+  .menu {
+    margin: 0;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: margin .5s ease-in-out, max-height .5s ease-in-out, opacity .3s .1s ease-in-out,
+  }
+
+
+
+  .menu-checkbox:focus + .menu-toggle {
+    outline: white auto 2px;
+  }
+ 
+  
+  .menu-checkbox:checked ~ .menu {
+    margin: 1em 0;
+    max-height: 1000px;
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 781px) {
+
+  .menu-toggle {
+      display: none;
   }
 
   label {
@@ -27,9 +55,6 @@
     color: white;
     cursor: pointer;
   }
-  
-  #toggle:checked + .menu {
-    display: flex;
-    color: white;
-  }
 }
+
+
