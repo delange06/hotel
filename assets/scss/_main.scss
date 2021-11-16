@@ -83,7 +83,7 @@ video {
 
 //*************  NAVBAR MENU ***********************//
 
-label, #toggle {
+label, #menu-btn {
   color: #fff;
   display: none;
 }
@@ -273,12 +273,12 @@ footer {
 }
 
 // **************       BUTTON        ***********************//
-input {
+.book {
   background-color: rgb(246, 238, 238);
   margin-right: 50px;
+  width: 70px;
   display: inline-block;
   height: 40px;
-  width: 70px;
 }
 
 
