@@ -6,9 +6,7 @@
     height: 220px;
   }
 
-  #toggle:checked + .menu {
-    display: flex;
-  }
+ 
 
   .hotel-name {
     transform: translateX(-900px);
@@ -27,5 +25,10 @@
     font-size: 40px;
     color: white;
     cursor: pointer;
+  }
+  
+  #toggle:checked + .menu {
+    display: flex;
+    color: white;
   }
 }

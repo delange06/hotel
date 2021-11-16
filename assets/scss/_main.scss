@@ -164,8 +164,6 @@ nav {
       }
     }
 }
-//**********************  END NAVBAR MENU  ***********************  //
-
 
 
 //*****************   SECTION 1   **************************//
@@ -179,6 +177,64 @@ nav {
 
 
 
+
+// *************     CONTACT           **************************  //
+
+
+fieldset {
+  margin-bottom: 15px;
+  padding: 10px;
+}
+ 
+legend {
+  padding: 0px 3px;
+  font-weight: bold;
+  font-size: 30px;
+}
+ 
+label {
+  width: 100px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 6px;
+}
+ 
+ 
+input:focus {
+  background: #eaeaea;
+}
+ 
+textarea {
+  width: 500px;
+}
+ 
+textarea {
+  height: 200px;
+}
+ 
+select {
+  width: 100px;
+}
+ 
+input[type=submit] {
+  width: 150px;
+  padding: 10px;
+  border-radius: 30px;
+  font-size: 15px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.text-form {
+  font-size: 15px;
+}
+
+#form-contact {
+  color: white;
+  input {
+    width: 500px;
+  }
+}
 // *************     MAP **************************  //
 #map {
   width: 50vw;

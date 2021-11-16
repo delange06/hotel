@@ -131,6 +131,49 @@ nav {
   text-align: justify;
   margin-bottom: 100px; }
 
+fieldset {
+  margin-bottom: 15px;
+  padding: 10px; }
+
+legend {
+  padding: 0px 3px;
+  font-weight: bold;
+  font-size: 30px; }
+
+label {
+  width: 100px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 6px; }
+
+input:focus {
+  background: #eaeaea; }
+
+textarea {
+  width: 500px; }
+
+textarea {
+  height: 200px; }
+
+select {
+  width: 100px; }
+
+input[type=submit] {
+  width: 150px;
+  padding: 10px;
+  border-radius: 30px;
+  font-size: 15px;
+  align-items: center;
+  cursor: pointer; }
+
+.text-form {
+  font-size: 15px; }
+
+#form-contact {
+  color: white; }
+  #form-contact input {
+    width: 500px; }
+
 #map {
   width: 50vw;
   z-index: -1; }
@@ -175,35 +218,11 @@ input {
   color: white;
   cursor: pointer; }
 
-@media screen and (min-width: 480px) and (max-width: 779px) {
-  h1 {
-    font-size: 7vh; }
-
-  .mobile-menu {
-    display: none; }
-
-  .mobile {
-    display: none; }
-
-  .formation__container {
-    display: flex;
-    flex-wrap: wrap; }
-    .formation__container article {
-      width: 45%; } }
-@media screen and (max-width: 480px) {
-  .desktop {
-    display: none; }
-
-  .mobile-menu {
-    display: show; } }
 @media screen and (max-width: 580px) {
   nav .menu {
     display: none;
     flex-direction: column;
     height: 220px; }
-
-  #toggle:checked + .menu {
-    display: flex; }
 
   .hotel-name {
     transform: translateX(-900px); }
@@ -219,6 +238,10 @@ input {
     margin: 0 auto;
     font-size: 40px;
     color: white;
-    cursor: pointer; } }
+    cursor: pointer; }
+
+  #toggle:checked + .menu {
+    display: flex;
+    color: white; } }
 
 /*# sourceMappingURL=style.css.map */
