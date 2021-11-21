@@ -11,25 +11,31 @@ figure {
     margin: 0 auto;
 }
 
-.container {
-  display: grid;
-  width: 100%;
-  grid-template-columns: 1fr;
-  grid-template-rows: 100px 1fr 150px;
-  grid-template-areas:
-    "heade"
-    "main"
-    "footer";
-}
-.header {
-  grid-area: heade;
-}
-.main {
-  grid-area: main;
-}
-.footer {
-  grid-area: footer;
-}
+// .container {
+//   display: grid;
+//   width: 100%;
+//   grid-template-columns: 1fr, 1fr, 1fr;
+//   grid-template-rows: 100px 1fr 150px;
+//   grid-template-areas:
+//     "heade heade heade"
+//     "main main main"
+//     "footer footer footer";
+// }
+// .header {
+//   grid-area: heade;
+// }
+ 
+// .main {
+//   grid-area: main;
+//   grid-template-columns: 1fr 1fr;
+
+// }
+ 
+// .footer {
+//   grid-area: footer;
+// }
+
+
 
 p {
   text-align: center;
@@ -66,11 +72,7 @@ h3 {
     text-align: justify;
   }
 }
-
-section {
-  display: flex;
-  flex-direction: column;
-}
+ 
 
 .titre {
   text-align: center;
@@ -115,7 +117,7 @@ nav {
       display: flex;
       gap: 1em;
       list-style: none;
-      font-size: 1vw;
+      font-size: 12px;
      
       li {
          flex: 1 0 auto; // le texte dans le li ne passe pas à la ligne
@@ -165,11 +167,28 @@ nav {
   margin: 0 100px;
   text-align: justify;
   margin-bottom: 100px;
+  
 }
 
+.presentation ~ figure {
+  text-align: center;
+}
+
+main + section {
+  display: flex;
+  justify-content: center;
+}
+
+
+
 // *************     SECTION 2           CHAMBRE            **************************  //
-
-
+.chambres {
+  display: grid;
+  grid-gap: 1rem;
+  max-width: 1700px;
+  margin-bottom: 100px;
+}
+ 
 
 
 // *************     CONTACT           **************************  //
@@ -233,7 +252,7 @@ input[type=submit] {
 // *************     MAP **************************  //
 #map {
   width: 50vw;
-  z-index: -1;
+  //z-index: -1;
 }
 #map + article {
   color: #fff;
@@ -242,6 +261,15 @@ input[type=submit] {
   }
 }
 
+.localisation {
+  display: flex;
+  padding: 10px;
+}
+#map ~ article{
+  display: flex;
+  align-items: flex-end;
+  padding: 10px;
+}
 
 
 //*********************** SECTION FOOTER ********************************* //

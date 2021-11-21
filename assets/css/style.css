@@ -19,22 +19,6 @@ body {
 figure {
   margin: 0 auto; }
 
-.container {
-  display: grid;
-  width: 100%;
-  grid-template-columns: 1fr;
-  grid-template-rows: 100px 1fr 150px;
-  grid-template-areas: "heade" "main" "footer"; }
-
-.header {
-  grid-area: heade; }
-
-.main {
-  grid-area: main; }
-
-.footer {
-  grid-area: footer; }
-
 p {
   text-align: center;
   font-size: 1vw;
@@ -64,10 +48,6 @@ h3 {
   h3 span {
     font-size: 12px;
     text-align: justify; }
-
-section {
-  display: flex;
-  flex-direction: column; }
 
 .titre {
   text-align: center;
@@ -99,7 +79,7 @@ nav ul {
   display: flex;
   gap: 1em;
   list-style: none;
-  font-size: 1vw; }
+  font-size: 12px; }
   nav ul li {
     flex: 1 0 auto;
     font-family: Roboto;
@@ -125,6 +105,19 @@ nav ul {
 .presentation {
   margin: 0 100px;
   text-align: justify;
+  margin-bottom: 100px; }
+
+.presentation ~ figure {
+  text-align: center; }
+
+main + section {
+  display: flex;
+  justify-content: center; }
+
+.chambres {
+  display: grid;
+  grid-gap: 1rem;
+  max-width: 1700px;
   margin-bottom: 100px; }
 
 fieldset {
@@ -170,13 +163,21 @@ input[type=submit] {
     margin: 6px; }
 
 #map {
-  width: 50vw;
-  z-index: -1; }
+  width: 50vw; }
 
 #map + article {
   color: #fff; }
   #map + article a {
     color: #fff; }
+
+.localisation {
+  display: flex;
+  padding: 10px; }
+
+#map ~ article {
+  display: flex;
+  align-items: flex-end;
+  padding: 10px; }
 
 footer {
   display: flex;
@@ -213,7 +214,10 @@ footer {
   color: white;
   cursor: pointer; }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 548px) {
+  .adresse {
+    display: none; }
+
   .nav {
     transform: translateY(70px); }
     .nav ul li ul {
@@ -244,7 +248,16 @@ footer {
   .hotel-name {
     transform: translateX(-900px);
     overflow: hidden; } }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 850px) {
+  nav ul {
+    font-size: 8px; } }
+@media screen and (max-width: 1140px) {
+  .chambres {
+    grid-template-columns: repeat(1, 1fr); } }
+@media screen and (min-width: 1140px) {
+  .chambres {
+    grid-template-columns: repeat(2, 1fr); } }
+@media screen and (min-width: 548px) {
   .menu__trigger {
     display: none; }
     .menu__trigger + label > .menu__button-open {

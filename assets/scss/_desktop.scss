@@ -1,10 +1,9 @@
+ 
+@media screen and (max-width: 548px) {
 
-
-
-
-
-
-@media screen and (max-width: 480px) {
+  .adresse {
+    display: none;
+  }
 
   .nav {
     transform: translateY(70px);
@@ -52,51 +51,41 @@
       border-radius: 0.25rem;
     }
   }
-  
 
   .hotel-name {
     transform: translateX(-900px);
     overflow: hidden;
   }
 
-  // nav {
-   
-
-  //   ul {
-  //     flex-direction: column;
-  //     font-size: 12px;
-  //     margin: 0;
-  //     transition: margin .5s ease-in-out, max-height .5s ease-in-out, opacity .3s .1s ease-in-out;
-  //     li ul {
-  //       display: none;
-  //     }
-  //   }
-  // }
-  // .menu-burger {  
-  //   display: block;
-  //   padding: 10px;
-  // }
-
-
-  // .menu-checkbox:focus + .menu {
-  //   outline: white auto 2px;
-  // }
- 
-  
-  // .menu-checkbox:checked + .menu {
-  //   //margin: 1em 0;
-  //   max-height: 1000px;
-  //   opacity: 1;
-  //   // display: flex;
-  //   // transform: translateY(100px);
-  // }
 }
 
-@media screen and (min-width: 480px) {
+
+@media screen and (max-width: 850px) {
+  nav {
+    ul {
+      font-size: 8px;
+    }
+  }
+  
+}
+
+
+@media screen and (max-width: 1140px) {
+  .chambres {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .chambres {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@media screen and (min-width: 548px) {
 
   .menu {
-   
-
     &__trigger {
       display: none;
       & + label > .menu__button-open {
@@ -117,6 +106,10 @@
     color: white;
     cursor: pointer;
   }
+
+
+
+ 
 }
 
 
