@@ -1,48 +1,111 @@
-.menu-checkbox {
-  opacity: 0;
-  position: absolute;
-  top: -1000px;
-}
 
 
-@media screen and (max-width: 780px) {
+
+
+
+
+@media screen and (max-width: 480px) {
+
+  .nav {
+    transform: translateY(70px);
+    ul li ul {
+      transform: translateX(130%);
+      font-size: 12px;
+    }
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    font-size: 12px;
+    margin-top: 20px;
+
+    
+    transition: transform 0.5s;
+
+   
+    &__trigger {
+      display: none;
+      &:checked {
+        & + label > .menu__button-open {
+          display: none;
+        }
+        
+      }
+      &:not(:checked) {
+        & + label > .menu__button-close {
+          display: none;
+        }
+        
+  
+        & ~ .menu {
+          transform: translateY(-300%);
+        }
+      }
+    }
+    
+    &__button {
+      width: 200px;
+      border: 1px solid #ddf;
+      padding: 1rem;
+      border-radius: 0.25rem;
+    }
+  }
+  
 
   .hotel-name {
     transform: translateX(-900px);
     overflow: hidden;
   }
 
-  .menu-toggle {
-    display: block;
-    padding: .1em 0.1em;
-  }
+  // nav {
+   
 
-  .menu {
-    margin: 0;
-    max-height: 0;
-    opacity: 0;
-    overflow: hidden;
-    transition: margin .5s ease-in-out, max-height .5s ease-in-out, opacity .3s .1s ease-in-out,
-  }
+  //   ul {
+  //     flex-direction: column;
+  //     font-size: 12px;
+  //     margin: 0;
+  //     transition: margin .5s ease-in-out, max-height .5s ease-in-out, opacity .3s .1s ease-in-out;
+  //     li ul {
+  //       display: none;
+  //     }
+  //   }
+  // }
+  // .menu-burger {  
+  //   display: block;
+  //   padding: 10px;
+  // }
 
 
-
-  .menu-checkbox:focus + .menu-toggle {
-    outline: white auto 2px;
-  }
+  // .menu-checkbox:focus + .menu {
+  //   outline: white auto 2px;
+  // }
  
   
-  .menu-checkbox:checked ~ .menu {
-    margin: 1em 0;
-    max-height: 1000px;
-    opacity: 1;
-  }
+  // .menu-checkbox:checked + .menu {
+  //   //margin: 1em 0;
+  //   max-height: 1000px;
+  //   opacity: 1;
+  //   // display: flex;
+  //   // transform: translateY(100px);
+  // }
 }
 
-@media screen and (min-width: 781px) {
+@media screen and (min-width: 480px) {
 
-  .menu-toggle {
+  .menu {
+   
+
+    &__trigger {
       display: none;
+      & + label > .menu__button-open {
+        display: none;
+      }
+      & + label > .menu__button-close {
+        display: none;
+      }
+    }
   }
 
   label {
@@ -51,7 +114,6 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    font-size: 40px;
     color: white;
     cursor: pointer;
   }

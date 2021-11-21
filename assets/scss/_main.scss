@@ -8,27 +8,27 @@ body {
  
 
 figure {
-    margin: 0;
+    margin: 0 auto;
 }
 
-h1 {
-  font-family: open-sans;
-  color: $secondary_color;
-  text-align: center;
+.container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 1fr 150px;
+  grid-template-areas:
+    "heade"
+    "main"
+    "footer";
 }
-
-h2 {
-  color: $secondary_color;
-  font-size: 18px;
-  text-align: center;
+.header {
+  grid-area: heade;
 }
-
-/**  Section à propos   **/
-
-h1 {
-  font-size: 4vh;
-  margin: 0;
-  padding: 0;
+.main {
+  grid-area: main;
+}
+.footer {
+  grid-area: footer;
 }
 
 p {
@@ -39,11 +39,18 @@ p {
   color: #fff;
 }
 
+h1 {
+  font-size: 1vw;
+  margin-left: 50px;
+  color: $tersary_color;
+  font-family: open-sans;
+  text-align: center;
+}
+
 h2 {
 color: $tersary_color;
 font-size: 2vw;
 line-height: 0;
-height:0;
 text-align: center;
 margin: 5;
 padding: 20px;
@@ -55,10 +62,16 @@ h3 {
   margin: 0 10vw;
 
   span {
-    font-size: 18px;
+    font-size: 12px;
     text-align: justify;
   }
 }
+
+section {
+  display: flex;
+  flex-direction: column;
+}
+
 .titre {
   text-align: center;
   font-size: 35px;
@@ -95,32 +108,16 @@ video {
   background-color: black;
   opacity: 0.6;
 }
-.hotel-name {
-  margin-left: 80px;
-  font-size: 2vw;
-}
-
-//a {
-    // color: $primary_color;
-    // &:hover {color: $secondary_color;}
-    // &:active {color: $primary_color;}
-
-//}
-
-ul {
-    list-style: none;
-}
-
 
 nav {
-    transform: translateX(-3em);
-    font-size: 0.7vw;
-    ul {
+
+  ul {
       display: flex;
       gap: 1em;
+      list-style: none;
+      font-size: 1vw;
      
       li {
-        position: relative;
          flex: 1 0 auto; // le texte dans le li ne passe pas à la ligne
          font-family: Roboto;
           padding: 0;
@@ -161,6 +158,8 @@ nav {
 }
 
 
+
+
 //*****************   SECTION 1   **************************//
 .presentation {
   margin: 0 100px;
@@ -187,12 +186,7 @@ legend {
   font-size: 30px;
 }
  
-label {
-  width: 100px;
-  display: inline-block;
-  vertical-align: top;
-  margin: 6px;
-}
+
  
  
 input:focus {
@@ -229,6 +223,12 @@ input[type=submit] {
   input {
     width: 500px;
   }
+  label {
+  width: 100px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 6px;
+}
 }
 // *************     MAP **************************  //
 #map {
@@ -246,7 +246,6 @@ input[type=submit] {
 
 //*********************** SECTION FOOTER ********************************* //
 footer {
-    height: 150px;
     display: flex;
     flex-direction: column;
     justify-content: center;
