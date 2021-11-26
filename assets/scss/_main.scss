@@ -11,29 +11,7 @@ figure {
     margin: 0 auto;
 }
 
-// .container {
-//   display: grid;
-//   width: 100%;
-//   grid-template-columns: 1fr, 1fr, 1fr;
-//   grid-template-rows: 100px 1fr 150px;
-//   grid-template-areas:
-//     "heade heade heade"
-//     "main main main"
-//     "footer footer footer";
-// }
-// .header {
-//   grid-area: heade;
-// }
- 
-// .main {
-//   grid-area: main;
-//   grid-template-columns: 1fr 1fr;
 
-// }
- 
-// .footer {
-//   grid-area: footer;
-// }
 
 
 
@@ -162,6 +140,8 @@ nav {
 
 
 
+
+
 //*****************   SECTION 1   **************************//
 .presentation {
   margin: 0 100px;
@@ -263,6 +243,8 @@ input[type=submit] {
 
 .localisation {
   display: flex;
+  flex-wrap: wrap;
+  width: 100%;
   padding: 10px;
 }
 #map ~ article{
@@ -274,6 +256,7 @@ input[type=submit] {
 
 //*********************** SECTION FOOTER ********************************* //
 footer {
+   
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -281,6 +264,8 @@ footer {
     background-color: black;
     .footer__social {
         display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
         justify-content: space-around;
         gap: 3em;
 

@@ -172,6 +172,8 @@ input[type=submit] {
 
 .localisation {
   display: flex;
+  flex-wrap: wrap;
+  width: 100%;
   padding: 10px; }
 
 #map ~ article {
@@ -187,6 +189,8 @@ footer {
   background-color: black; }
   footer .footer__social {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     gap: 3em; }
     footer .footer__social .footer__social-item i {
@@ -214,9 +218,28 @@ footer {
   color: white;
   cursor: pointer; }
 
+.container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr  1fr;
+  grid-template-areas: "head head" "main main" "footer footer"; }
+
+.head {
+  grid-area: head; }
+
+.main {
+  grid-area: main; }
+
+.footer {
+  grid-area: footer; }
+
 @media screen and (max-width: 548px) {
+  .hotel-name {
+    transform: translateX(-1900px);
+    overflow: hidden; }
+
   .adresse {
-    display: none; }
+    transform: translateX(-900px); }
 
   .nav {
     transform: translateY(70px); }
@@ -243,11 +266,7 @@ footer {
       width: 200px;
       border: 1px solid #ddf;
       padding: 1rem;
-      border-radius: 0.25rem; }
-
-  .hotel-name {
-    transform: translateX(-900px);
-    overflow: hidden; } }
+      border-radius: 0.25rem; } }
 @media screen and (max-width: 850px) {
   nav ul {
     font-size: 8px; } }
