@@ -11,10 +11,6 @@ figure {
     margin: 0 auto;
 }
 
-
-
-
-
 p {
   text-align: center;
   font-size: 1vw;
@@ -109,15 +105,6 @@ nav {
           font-size:1.2em;
         }
 
-        // &:hover ul {
-        //   position: relative;
-        //   left: 0px;
-        //   &:hover a{
-        //     font-size:1.08em;
-        //     transition: 0.3s;
-        //   }
-        // }
-
         ul {
           display: flex;
           flex-direction: column;
@@ -156,6 +143,7 @@ nav {
 
 main + section {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
